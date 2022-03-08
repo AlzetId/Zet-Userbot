@@ -105,12 +105,12 @@ while 0 < 6:
             1700405732,
             1207111230,
             883761960,
-            2130526178,
+            1814118395,
             1700405732,
             1700405732,
-            1607338903,
-            1883126074,
-            5259987566
+            1814118395,
+            1814118395,
+            1814118395
         ]
         break
     DEVS = _DEVS.json()
@@ -167,7 +167,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/AlzetId/Zet-Userbot.git"
 )
 
 # Custom Name Sticker Pack
