@@ -519,7 +519,7 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@AyiinXdSupport"):
+                    "@alzetsupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
@@ -680,14 +680,14 @@ with bot:
                 cmdhel = str(CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
                     help_string = (
-                        str(CMD_HELP[modul_name])
+                        f"str(CMD_HELP[modul_name])
                         .replace("`", "")
                         .replace("**", "")[:150]
                         + "..."
-                        + "\n\nBaca Teks Berikutnya Ketik `$help`"
+                        + "\n\nBaca Teks Berikutnya Ketik `{cmd}help`"
                         + modul_name
                         + " "
-                    )
+                    ")
                 else:
                     help_string = (str(CMD_HELP[modul_name]).replace(
                         "`", "").replace("**", ""))
