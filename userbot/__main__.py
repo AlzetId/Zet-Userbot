@@ -79,7 +79,7 @@ async def ayiin_userbot_on():
     except Exception as e:
         LOGS.info(str(e))
     try:
-        await bot(JoinChannelRequest("@AyiinXdSupport"))
+        await bot(JoinChannelRequest("@alzetsupport"))
     except BaseException:
         pass
     try:
