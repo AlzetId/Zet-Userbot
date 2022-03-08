@@ -66,9 +66,9 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**᯽ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**᯽ 𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**᯽ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di matikan!**")
+    await edit_or_reply(event, "**᯽ 𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -79,10 +79,10 @@ async def shutdown_bot(event):
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(event, "**᯽ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di Restart**")
+    await edit_or_reply(event, "**᯽ 𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**᯽ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**᯽ 𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -120,13 +120,13 @@ async def repo_is_here(event):
     ayiin = await edit_or_reply(event, "🤖")
     sleep(3)
     await ayiin.edit(
-        "**Hey**, I am using **✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧** \n"
+        "**Hey**, I am using **✧ 𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧** \n"
         "卍━━━━━━━━━━━━━━━━━卍\n"
-        "➣ **𝚁𝙴𝙿𝙾 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/AyiinXd/Ayiin-Userbot)\n"
-        "➣ **𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃       :** [𝚈𝙸𝙽𝚂](t.me/AyiinXd)\n"
+        "➣ **𝚁𝙴𝙿𝙾 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/AlzetId/Zet-Userbot)\n"
+        "➣ **𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃       :** [𝚉𝙴𝚃](t.me/xyzetnih)\n"
         "卍━━━━━━━━━━━━━━━━━卍\n"
-        "➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/AyiinXdSupport)\n"
-        "➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/AyiinSupport)\n"
+        "➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/AlzetSupport)\n"
+        "➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/chzetnih)\n"
         "卍━━━━━━━━━━━━━━━━━卍\n"
     )
 
@@ -309,7 +309,7 @@ CMD_HELP.update(
     {
         "sleep": f"**Plugin : **`sleep`\
         \n\n  •  **Syntax :** `{cmd}sleep`\
-        \n  •  **Function : **Biarkan Ayiin-Userbot tidur selama beberapa detik \
+        \n  •  **Function : **Biarkan Zet-Userbot tidur selama beberapa detik \
     "
     }
 )
@@ -319,9 +319,9 @@ CMD_HELP.update(
     {
         "repo": f"**Plugin : **`Repository Ayiin-Userbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository Ayiin-Userbot\
+        \n  •  **Function : **Menampilan link Repository Zet-Userbot\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String Ayiin-Userbot\
+        \n  •  **Function : **Menampilan link String Zet-Userbot\
     "
     }
 )
