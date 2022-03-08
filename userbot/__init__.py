@@ -680,14 +680,14 @@ with bot:
                 cmdhel = str(CMD_HELP[modul_name])
                 if len(cmdhel) > 150:
                     help_string = (
-                        f"str(CMD_HELP[modul_name])
+                        str(CMD_HELP[modul_name])
                         .replace("`", "")
                         .replace("**", "")[:150]
                         + "..."
-                        + "\n\nBaca Teks Berikutnya Ketik `{cmd}help`"
+                        + "\n\nBaca Teks Berikutnya Ketik `.help`"
                         + modul_name
                         + " "
-                    ")
+                    )
                 else:
                     help_string = (str(CMD_HELP[modul_name]).replace(
                         "`", "").replace("**", ""))
