@@ -61,7 +61,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Ayiin-Userbot dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy Zet-Userbot dyno.**",
             )
             return repo.__del__()
         try:
