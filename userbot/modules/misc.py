@@ -317,7 +317,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository Ayiin-Userbot`\
+        "repo": f"**Plugin : **`Repository Zet-Userbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
         \n  •  **Function : **Menampilan link Repository Zet-Userbot\
         \n\n  •  **Syntax :** `{cmd}string`\
@@ -339,7 +339,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart Ayiin-Userbot`\
+        "restart": f"**Plugin : **`Restart Zet-Userbot`\
         \n\n  •  **Syntax :** `{cmd}restart`\
         \n  •  **Function : **Untuk Merestart userbot.\
     "
